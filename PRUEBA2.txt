@@ -1,0 +1,86 @@
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (master)
+$ git log
+commit 02f53eedcececeec96412a63330992aad6347f69 (HEAD -> master)
+Author: renzo paul lozano villegas <rlozanov@isannagustin.edu.pe>
+Date:   Fri Aug 25 17:43:24 2023 -0500
+
+    guardando un archivo txt
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (master)
+$ git log --oneline
+02f53ee (HEAD -> master) guardando un archivo txt
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (master)
+$ git remoto agregar origen https://github.com/renzoclass/labodeguita.git
+git: 'remoto' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (master)
+$ $ git remoto add origin https://github.com/renzoclass/labodeguita.git
+bash: $: command not found
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (master)
+$  git remote add origin https://github.com/renzoclass/labodeguita.git
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (master)
+$ git branch -M main
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 238.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/renzoclass/labodeguita.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        PRUEBA2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$ git add .
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   PRUEBA2.txt
+
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$ git¿ commit -m "enviando otro archivo plano"
+bash: git¿: command not found
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$ git commit -m "enviando otro archivo plano"
+[main bee3573] enviando otro archivo plano
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 PRUEBA2.txt
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 265 bytes | 265.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/renzoclass/labodeguita.git
+   02f53ee..bee3573  main -> main
+
+Labor@LAB_A_PC32 MINGW64 ~/OneDrive/Escritorio/PRUEBA (main)
+$
